@@ -15,3 +15,5 @@ export const allItems = {
 } as const;
 
 export type ItemType = keyof typeof allItems;
+
+export const items = Object.keys(allItems) as ItemType[];

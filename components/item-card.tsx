@@ -1,6 +1,13 @@
 import { Item } from "@/types/items";
 import Image from "next/image";
 import Link from "next/link";
+import { items } from "@/data";
+
+export const generateStaticParams = () => {
+  return items.map((id) => ({
+    id,
+  }));
+};
 
 const ItemCard = ({ id, title, tags, href }: Item) => {
   return (
