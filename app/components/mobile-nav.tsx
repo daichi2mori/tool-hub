@@ -15,7 +15,7 @@ export default function MobileNav() {
       <SheetContent side="left">
         <div className="flex flex-col">
           {allCategory.map((category) => (
-            <Button className="justify-start" variant="ghost" key={category.id}>
+            <Button className="justify-start" variant="ghost" key={category.id} asChild>
               <SheetClose asChild>
                 <Link href={`/${category.id}`}>{category.label}</Link>
               </SheetClose>
