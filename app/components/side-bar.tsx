@@ -10,8 +10,6 @@ import React from "react";
 const SideBar = () => {
   const idParam = useParams();
 
-  console.log(idParam);
-
   return (
     <div className="hidden lg:flex w-64 border-r flex-col p-4">
       {allCategory.map((category) => (

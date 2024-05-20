@@ -13,7 +13,7 @@ export const getTagLabel = (id: Tag) => {
 };
 
 export const hasCategory = (idParams: Params, category: string) => {
-  if (!idParams) return true;
+  if (!idParams.id) return true;
 
   if (idParams.id === category) return true;
 
