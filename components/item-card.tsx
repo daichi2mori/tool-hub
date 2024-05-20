@@ -22,7 +22,7 @@ const ItemCard = ({ id, title, tags, href }: Item) => {
         {tags.map((tag) => (
           <Link
             key={tag.id}
-            href={`${basePath}/${tag.id}`}
+            href={`/tool-hub/${tag.id}`}
             className="border whitespace-nowrap text-muted-foreground bg-muted rounded text-xs px-1.5 py-1"
           >
             {tag.label}
