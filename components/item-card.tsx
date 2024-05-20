@@ -1,8 +1,12 @@
 import { Item } from "@/types/items";
+import getConfig from "next/config";
 import Image from "next/image";
 import Link from "next/link";
 
 const ItemCard = ({ id, title, tags, href }: Item) => {
+  const { publicRuntimeConfig } = getConfig();
+  const basePath = (publicRuntimeConfig && publicRuntimeConfig.basePath) || "";
+
   return (
     <div className="aspect-video relative p-4 border rounded-md shadow-sm bg-card hover:shadow-lg transition duration-300">
       <div className="aspect-video overflow-hidden relative border mb-2 rounded">
@@ -18,7 +22,7 @@ const ItemCard = ({ id, title, tags, href }: Item) => {
         {tags.map((tag) => (
           <Link
             key={tag.id}
-            href={`/${tag.id}`}
+            href={`${basePath}/${tag.id}`}
             className="border whitespace-nowrap text-muted-foreground bg-muted rounded text-xs px-1.5 py-1"
           >
             {tag.label}

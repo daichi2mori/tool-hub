@@ -14,7 +14,7 @@ export const photos: Item[] = [
     tags: [{ id: "no-license-required", label: "ライセンス表記不要" }],
   },
   {
-    id: "lore-picsum",
+    id: "lorem-picsum",
     title: "Lorem Picsum",
     href: "https://picsum.photos/",
     tags: [{ id: "no-license-required", label: "ライセンス表記不要" }],
