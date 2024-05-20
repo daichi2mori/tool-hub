@@ -1,5 +1,5 @@
 import ItemCard from "@/components/item-card";
-import { allItems, items, type ItemType } from "@/data/index";
+import { allItems, items, type ItemType } from "@/data";
 
 export const generateStaticParams = () => {
   return items.map((id) => ({
@@ -7,7 +7,7 @@ export const generateStaticParams = () => {
   }));
 };
 
-const page = ({
+const Page = ({
   params: { id },
 }: {
   params: {
@@ -31,4 +31,4 @@ const page = ({
   );
 };
 
-export default page;
+export default Page;

@@ -1,34 +1,34 @@
-import { Item } from "@/types/items";
+import { Item } from "@/types";
 
 export const templates: Item[] = [
   {
     id: "uiverse",
     title: "UIverse",
     href: "https://uiverse.io/",
-    tags: [{ id: "no-license-required", label: "ライセンス表記不要" }],
+    tags: ["no-license-required"],
   },
   {
     id: "tail-kit",
     title: "Tail-kit",
     href: "https://www.tailwind-kit.com/",
-    tags: [{ id: "no-license-required", label: "ライセンス表記不要" }],
+    tags: ["no-license-required"],
   },
   {
     id: "tailblocks",
     title: "TAILBLOCKS",
     href: "https://tailblocks.cc/",
-    tags: [{ id: "no-license-required", label: "ライセンス表記不要" }],
+    tags: ["no-license-required"],
   },
   {
     id: "meraki-ui",
     title: "Merakiui",
     href: "https://merakiui.com/",
-    tags: [{ id: "no-license-required", label: "ライセンス表記不要" }],
+    tags: ["no-license-required"],
   },
   {
     id: "sailboat-ui",
     title: "Sailboat UI",
     href: "https://sailboatui.com/",
-    tags: [{ id: "no-license-required", label: "ライセンス表記不要" }],
+    tags: ["no-license-required"],
   },
 ];

@@ -1,22 +1,22 @@
-import { Item } from "@/types/items";
+import { Item } from "@/types";
 
 export const photos: Item[] = [
   {
     id: "odan",
     title: "O-DAN",
     href: "https://o-dan.net/ja/",
-    tags: [{ id: "no-license-required", label: "ライセンス表記不要" }],
+    tags: ["no-license-required"],
   },
   {
     id: "pixabay",
     title: "Pixabay",
     href: "https://pixabay.com/ja/",
-    tags: [{ id: "no-license-required", label: "ライセンス表記不要" }],
+    tags: ["no-license-required"],
   },
   {
     id: "lorem-picsum",
     title: "Lorem Picsum",
     href: "https://picsum.photos/",
-    tags: [{ id: "no-license-required", label: "ライセンス表記不要" }],
+    tags: ["no-license-required"],
   },
 ];

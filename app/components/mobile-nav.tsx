@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { TAGS } from "@/lib/tags";
+import { allCategory } from "@/data";
 import { Menu } from "lucide-react";
 import Link from "next/link";
 
@@ -14,10 +14,10 @@ export default function MobileNav() {
       </SheetTrigger>
       <SheetContent side="left">
         <div className="flex flex-col">
-          {TAGS.map((tag) => (
-            <Button className="justify-start" variant="ghost" key={tag.id}>
+          {allCategory.map((category) => (
+            <Button className="justify-start" variant="ghost" key={category.id}>
               <SheetClose asChild>
-                <Link href={`/${tag.id}`}>{tag.label}</Link>
+                <Link href={`/${category.id}`}>{category.label}</Link>
               </SheetClose>
             </Button>
           ))}

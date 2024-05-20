@@ -6,15 +6,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  redirects() {
-    return [
-      {
-        source: "/",
-        destination: "/illustrations",
-        permanent: true,
-      },
-    ];
-  },
 };
 
 export default nextConfig;
