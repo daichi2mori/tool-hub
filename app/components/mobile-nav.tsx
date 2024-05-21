@@ -13,9 +13,14 @@ export default function MobileNav() {
         </Button>
       </SheetTrigger>
       <SheetContent side="left">
-        <div className="flex flex-col">
+        <div className="flex flex-col gap-3">
           {allCategory.map((category) => (
-            <Button className="justify-start" variant="ghost" key={category.id} asChild>
+            <Button
+              className="justify-start text-lg font-semibold"
+              variant="ghost"
+              key={category.id}
+              asChild
+            >
               <SheetClose asChild>
                 <Link href={`/${category.id}`}>{category.label}</Link>
               </SheetClose>
