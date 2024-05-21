@@ -178,4 +178,11 @@ export const allItems: Item[] = [
     category: "template",
     tags: ["mit-license"],
   },
+  {
+    id: "favicon-generator",
+    title: "Favicon Generator",
+    href: "https://realfavicongenerator.net/",
+    category: "icon",
+    tags: ["free"],
+  },
 ];
