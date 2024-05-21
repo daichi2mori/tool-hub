@@ -11,7 +11,7 @@ const SideBar = () => {
   const idParam = useParams();
 
   return (
-    <div className="hidden lg:sticky lg:block top-16 z-30 h-[calc(100vh-16rem)] w-64 border-r p-4">
+    <div className="hidden lg:block lg:sticky top-16 z-30 h-[calc(100vh-16rem)] border-r p-4">
       <div className="flex flex-col gap-2">
         {allCategory.map((category) => (
           <Button
