@@ -1,0 +1,17 @@
+export const allTags = [
+  { id: "no-license-required", label: "ライセンス表記不要" },
+  { id: "available-for-commercial-use", label: "商用利用可能" },
+  { id: "modifiable", label: "改変可能" },
+  { id: "no-license-inheritance-required", label: "ライセンス継承不要" },
+  { id: "free", label: "無料" },
+  { id: "public-domain", label: "パブリックドメイン" },
+  { id: "mit-license", label: "MIT-License" },
+  { id: "cc-by-nd-4.0", label: "CC BY-ND 4.0" },
+  { id: "png", label: "PNG" },
+  { id: "jpg", label: "JPG" },
+  { id: "svg", label: "SVG" },
+  { id: "eps", label: "EPS" },
+  { id: "ai", label: ".ai" },
+  { id: "mp3", label: "MP3" },
+  { id: "figma", label: "Figma" },
+] as const;

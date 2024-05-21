@@ -1,9 +1,11 @@
 import ItemCard from "@/components/item-card";
-import { allItems, items, type ItemType } from "@/data";
+import { allCategory } from "@/data/categories";
+import { allItems } from "@/data/items";
+import type { Categories } from "@/types";
 
 export const generateStaticParams = () => {
-  return items.map((id) => ({
-    id,
+  return allCategory.map((category) => ({
+    id: category.id,
   }));
 };
 
@@ -11,10 +13,10 @@ const Page = ({
   params: { id },
 }: {
   params: {
-    id: ItemType;
+    id: Categories;
   };
 }) => {
-  const currentItems = allItems[id] || [];
+  const currentItems = allItems.filter((item) => item.category === id);
 
   if (currentItems.length === 0) {
     return <p className="text-sm text-muted-foreground my-10">このページは存在しません</p>;

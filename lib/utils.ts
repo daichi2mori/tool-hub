@@ -1,4 +1,4 @@
-import { allTags } from "@/data";
+import { allTags } from "@/data/tags";
 import { Tag } from "@/types";
 import { type ClassValue, clsx } from "clsx";
 import type { Params } from "next/dist/shared/lib/router/utils/route-matcher";
@@ -13,8 +13,6 @@ export const getTagLabel = (id: Tag) => {
 };
 
 export const hasCategory = (idParams: Params, category: string) => {
-  if (!idParams.id) return true;
-
   if (idParams.id === category) return true;
 
   return false;

@@ -1,12 +1,12 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { allCategory } from "@/data";
+import { allCategory } from "@/data/categories";
 import { cn, hasCategory } from "@/lib/utils";
 import Link from "next/link";
 import { useParams } from "next/navigation";
 import React from "react";
-
+// すべて表示させるので、ホーム画面ではアクティブ判定いらない
 const SideBar = () => {
   const idParam = useParams();
 
