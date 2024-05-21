@@ -8,7 +8,7 @@ const ItemCard = ({ id, title, tags, href }: Item) => {
     <div className="p-4 border rounded-md shadow-sm hover:shadow-lg bg-card dark:hover:bg-accent transition duration-500">
       <Link href={href} target="_blank">
         <div className="aspect-video overflow-hidden relative border mb-2 rounded">
-          <Image fill objectFit="cover" src={`/tool-hub/${id}.avif`} alt="" />
+          <Image fill className="object-cover" src={`/tool-hub/${id}.avif`} alt="" />
         </div>
         <h2 className="text-sm font-semibold">{title}</h2>
         <div className="flex flex-wrap relative z-10 mt-2 gap-2">
