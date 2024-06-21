@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="border-t">
       <div className="flex items-center justify-between container h-16">
-        <p className="text-muted-foreground">&copy; daichi</p>
+        <p className="text-muted-foreground text-sm">&copy; 2024 daichi2mori</p>
         <div className="flex items-center gap-2">
           <Button size="icon" variant="ghost" asChild>
             <Link href="https://x.com/da1ch7" target="_blank">
