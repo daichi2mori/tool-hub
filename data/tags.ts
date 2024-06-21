@@ -14,4 +14,5 @@ export const allTags = [
   { id: "ai", label: ".ai" },
   { id: "mp3", label: "MP3" },
   { id: "figma", label: "Figma" },
+  { id: "css", label: "CSS" },
 ] as const;

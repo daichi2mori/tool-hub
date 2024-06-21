@@ -23,4 +23,8 @@ export const allCategory = [
     id: "template",
     label: "テンプレート",
   },
+  {
+    id: "generator",
+    label: "ジェネレーター",
+  },
 ] as const;

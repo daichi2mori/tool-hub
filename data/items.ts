@@ -185,4 +185,18 @@ export const allItems: Item[] = [
     category: "icon",
     tags: ["free"],
   },
+  {
+    id: "oklch",
+    title: "OKLCH",
+    href: "https://oklch.com/",
+    category: "generator",
+    tags: ["css"],
+  },
+  {
+    id: "css-gradient",
+    title: "CSS Gradient",
+    href: "https://cssgradient.io/",
+    category: "generator",
+    tags: ["css"],
+  },
 ];
