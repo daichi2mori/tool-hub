@@ -199,4 +199,11 @@ export const allItems: Item[] = [
     category: "generator",
     tags: ["css"],
   },
+  {
+    id: "css-stock",
+    title: "CSS Stock",
+    href: "https://pote-chil.com/css-stock/ja",
+    category: "template",
+    tags: ["css"],
+  },
 ];
